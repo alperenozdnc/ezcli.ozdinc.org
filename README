@@ -1,0 +1,10 @@
+ezcli.ozdinc.org
+----------------
+
+this is the documentation site for ezcli (https://github.com/alperenozdnc/ezcli).
+
+it's almost identical to 'ezdocs' which is installable by cloning ezcli
+and running 'make && sudo make install install-docs'.
+
+but, this website gives a little bit more breathing room and some very minimal
+eye-candy. additional pages that don't exist in 'ezdocs' may or may not exist in the future.
