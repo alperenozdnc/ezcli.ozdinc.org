@@ -3,34 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>ezcli/freecli</title>
   </head>
 
   <body>
-    <h1>ezcli/freecli</h1>
+    <section>
+      <h1>ezcli/freecli</h1>
 
-    <p><code>freecli() core function.</code></p>
+<pre><code>
+void freecli(cli_s *cli);
 
+</code></pre>
 
-    <pre><code>void freecli(cli_s *cli);</code></pre>
+      <p>
+        frees all ezcli-owned piece of memory which are the
+        <code>cli_s</code> struct and options initialized using
+        <code>allocopt()</code>.
+      </p>
+    </section>
 
+    <section>
+      <p>
+        <a href="/cli_s.html">see ezcli/cli_s</a> for explanation of what
+        <code>cli_s</code> is.<br />
+        <a href="/allocopt.html">see ezcli/allocopt</a> for explanation of what
+        <code>allocopt()</code> does.
+      </p>
 
-    <p>
-      frees all ezcli-owned piece of memory which are the
-      <code>cli_s</code> struct and options initialized using
-      <code>allocopt()</code>.
-    </p>
-
-    <p>
-      <a href="/cli_s.html">see ezcli/cli_s</a> for explanation of what
-      <code>cli_s</code> is.<br />
-      <a href="/allocopt.html">see ezcli/allocopt</a> for explanation of what
-      <code>allocopt()</code> does.
-    </p>
-
-    <p>
-      <code>freecli()</code> is also run when ezcli comes across a syntax error
-      and has to exit.
-    </p>
+      <p>
+        <code>freecli()</code> is also run when ezcli comes across a syntax
+        error and has to exit.
+      </p>
+    </section>
   </body>
 </html>

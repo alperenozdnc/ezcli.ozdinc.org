@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>ezcli/externals</title>
   </head>
 
   <body>
-    <h1>ezcli/external</h1>
+    <section>
+      <h1>ezcli/external</h1>
 
-    <p><code>core externals/globals.</code></p>
+      <pre><code>
+extern bool CLI_MODE_DEBUG;
+extern bool CLI_MODE_LAIDBACK;
+extern bool CLI_ALLOW_NONOPT;
+</code></pre>
+    </section>
+    <section>
+      <p>
+        <code>CLI_MODE_LAIDBACK</code> -&gt; false by default. enables laidback
+        mode, which downgrades all syntax errors to a warning.
+      </p>
 
+      <p>
+        <code>CLI_ALLOW_NONOPT</code> -&gt; false by default. see
+        <a href="/specials.html">ezcli/specials</a> for what this is.
+      </p>
 
-    <pre><code>
-    extern bool CLI_MODE_DEBUG;
-    extern bool CLI_MODE_LAIDBACK;
-    extern bool CLI_ALLOW_NONOPT;
-    </code></pre>
+      <p>
+        <code>CLI_MODE_DEBUG</code> -&gt; false by default. enables debug mode,
+        which prints useful debugging info about what option is run with what
+        input, when ezcli is validating, etc.
+      </p>
 
-    <p>
-      <code>CLI_MODE_LAIDBACK</code> -&gt; false by default. enables laidback
-      mode, which downgrades all syntax errors to a warning.
-    </p>
-
-    <p>
-      <code>CLI_ALLOW_NONOPT</code> -&gt; false by default. see
-      <a href="/specials.html">ezcli/specials</a> for what this is.
-    </p>
-
-    <p>
-      <code>CLI_MODE_DEBUG</code> -&gt; false by default. enables debug mode,
-      which prints useful debugging info about what option is run with what
-      input, when ezcli is validating, etc.
-    </p>
-
-    <p>
-      <code>CLI_MODE_RECOMMEND</code> -&gt; true by default. enables recommend
-      mode, which prints recommendations (if any is found to be accurate enough)
-      for unrecognized inputs.
-    </p>
+      <p>
+        <code>CLI_MODE_RECOMMEND</code> -&gt; true by default. enables recommend
+        mode, which prints recommendations (if any is found to be accurate
+        enough) for unrecognized inputs.
+      </p>
+    </section>
   </body>
 </html>
