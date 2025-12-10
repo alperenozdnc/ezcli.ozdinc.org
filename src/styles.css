@@ -19,10 +19,13 @@ body {
 
 pre {
     background: rgba(255, 255, 255, 0.1);
-    padding-inline: 2rem;
-    display: inline-block;
+    padding: 1rem 2rem;
+    display: block;
     margin-bottom: 1rem;
     color: rgb(190, 150, 200);
+    overflow-x: auto;
+    white-space: pre;
+    max-width: 100%;
 }
 
 code {
